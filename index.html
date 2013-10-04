@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<title>Boring CRUD app</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+	</head>
+  <body ng-controller="CustomerCtrl">
+
+		<h1>Customer app</h1>
+    <h3>List of customers</h3>
+    
+    <ul>
+      <li ng-repeat="customer in customers">{{customer}}</li> 
+    </ul><p>Number of customers: {{ customers.length }}</p>
+    {{ number }}
+    <input id="person-name" type="text" ng-model="newCust" placeholder="Enter Name">
+    <button ng-click="addCust()">Add person</button>
+
+    <script src="angular.min.js"></script>
+    <script src="customers.js"></script>
+	</body>
+
+</html>
